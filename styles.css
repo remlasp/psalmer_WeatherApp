@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, rgb(105, 111, 124), rgb(35, 38, 45));
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 40px;
+    color: rgb(240, 245, 250);
+}
+
+.wheatherForm {
+    margin: 20px;
+}
+
+.cityInput {
+    padding: 12px;
+    font-size: 32px;
+    font-weight: bold;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    margin: 10px;
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: rgb(240, 245, 250);
+}
+
+.cityInput::placeholder {
+    color: rgba(240, 245, 250, 0.5);
+}
+
+button[type="submit"] {
+    padding: 12px 24px;
+    font-weight: bold;
+    font-size: 28px;
+    background: linear-gradient(135deg, rgb(24, 189, 147), rgb(0, 150, 120));
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(135deg, rgb(0, 220, 170), rgb(0, 180, 140));
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    padding: 50px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 48px;
+    color: rgb(240, 245, 250);
+    text-shadow: 0 0 10px rgba(0, 200, 255, 0.3);
+}
+
+p {
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+.cityDisplay, .tempDisplay {
+    font-size: 64px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: rgb(240, 245, 250);
+    margin-bottom: 35px;
+    text-shadow: 0 0 10px rgba(0, 200, 255, 0.4);
+}
+
+.humidityDisplay {
+    font-weight: bold;
+    margin-bottom: 35px;
+    color: rgb(200, 220, 255);
+}
+
+.descDisplay {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 36px;
+    color: rgb(180, 220, 255);
+}
+
+.weatherEmoji {
+    margin: 0;
+    font-size: 120px;
+    text-shadow: 0 0 20px rgba(0, 200, 255, 0.5);
+}
+
+.errorDisplay {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 80, 80);
+    text-shadow: 0 0 10px rgba(255, 80, 80, 0.5);
+}
